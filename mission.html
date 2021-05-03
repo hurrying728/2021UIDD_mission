@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <script src="static/jquery.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>        <link href="mission.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <div class="back_arrow"></div>
+            <div class="title_text">任務</div>
+        </div>
+
+        <ul class="nav nav-tabs nav-justified" style="position: fixed; top: 22vw;">
+            <li class="active">
+                <a data-toggle="tab" href="#explore-mission"><img src="src/icon_tab.png" class="mission-tab-icon">探索任務</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#my-mission"><img src="src/icon_tab.png" class="mission-tab-icon">我的任務</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="explore-mission" class="tab-pane fade in active">
+                <div class="search-bar">
+                    <form class="search">
+                        <img src="src/search.png" class="mission-search-icon">
+                        <input type="search" placeholder="搜尋" class="search-input">
+                        <button type="reset" class="btn_cancel">取消</button>
+                    </form>    
+                </div> 
+
+                <div class="select-type">
+                    <div class="type-select-bar">
+                        <div class="type-select-btn">
+                            <div href='#type-btn-group' data-toggle="collapse" data-parent="#type-select-bar">
+                                <div class="select-btn">類別</div>
+                            </div>
+                        </div>
+                        <div id="type-btn-group" class="collapse">
+                            <div class="btn-group">
+                                <button id="useless-btn" disabled></button>
+                                <button id="entertainment">• 娛樂 </button>
+                                <button id="learning">• 學習</button>
+                                <button id="handcraft">• 手作</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mission-card">
+                    <div class="card-header">
+                        <div href='#collapse1' data-toggle="collapse" data-parent="#explore-mission">
+                            <div class="card-img"></div>
+                            <div class="mission-title">任務名稱</div>
+                            <div class="mission-joined">已有15人參加</div>
+                        </div>
+                    </div>
+                    <div id="collapse1" class="collapse">
+                        <div class="card-body">
+                            <ul class="nav nav-tabs nav-justified mission-info-tab">
+                                <li id="left-tab" class="active">
+                                    <a data-toggle="tab" href="#mission-intro1">任務介紹</a>
+                                </li>
+                                <li id="right-tab">
+                                    <a data-toggle="tab" href="#mission-signup1">揪團報名</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content card-tab-content">
+                                <div id="mission-intro1" class="tab-pane fade in active">
+                                    <div class="mission-intro-content">
+                                        我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣
+                                        我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣
+                                        我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣
+                                        我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣
+                                        我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣
+                                    </div>
+                                </div>
+                                <div id="mission-signup1" class="tab-pane fade">
+                                    <button class="btn-create-group">我要開團</button>
+                                    <div class="group-item-box">
+                                        <div class="group-item">
+                                            <div class="group-name">團名團名</div>
+                                            <div class="group-need">缺5人</div>
+                                            <button>+</button>
+                                        </div>
+                                        <div class="group-item">
+                                            <div class="group-name">團名團名</div>
+                                            <div class="group-need">缺5人</div>
+                                            <button>+</button>
+                                        </div>
+                                        <div class="group-item">
+                                            <div class="group-name">團名團名</div>
+                                            <div class="group-need">缺5人</div>
+                                            <button>+</button>
+                                        </div>
+                                        <div class="group-item">
+                                            <div class="group-name">團名團名</div>
+                                            <div class="group-need">缺5人</div>
+                                            <button>+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mission-card">
+                    <div class="card-header">
+                        <div href='#collapse2' data-toggle="collapse" data-parent="#explore-mission">
+                            <div class="card-img"></div>
+                            <div class="mission-title">任務名稱</div>
+                            <div class="mission-joined">已有15人參加</div>
+                        </div>
+                    </div>
+                    <div id="collapse2" class="collapse">
+                        <div class="card-body">
+                            <ul class="nav nav-tabs nav-justified mission-info-tab">
+                                <li id="left-tab" class="active">
+                                    <a data-toggle="tab" href="#mission-intro2">任務介紹</a>
+                                </li>
+                                <li id="right-tab">
+                                    <a data-toggle="tab" href="#mission-signup2">揪團報名</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content card-tab-content">
+                                <div id="mission-intro2" class="tab-pane fade in active">
+                                    <div class="mission-intro-content">
+                                        我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣
+                                        我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣
+                                        我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣
+                                        我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣
+                                        我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣
+                                    </div>
+                                </div>
+                                <div id="mission-signup2" class="tab-pane fade">
+                                    <button class="btn-create-group">我要開團</button>
+                                    <div class="group-item-box">
+                                        <div class="group-item">
+                                            <div class="group-name">團名團名</div>
+                                            <div class="group-need">缺5人</div>
+                                            <button>+</button>
+                                        </div>
+                                        <div class="group-item">
+                                            <div class="group-name">團名團名</div>
+                                            <div class="group-need">缺5人</div>
+                                            <button>+</button>
+                                        </div>
+                                        <div class="group-item">
+                                            <div class="group-name">團名團名</div>
+                                            <div class="group-need">缺5人</div>
+                                            <button>+</button>
+                                        </div>
+                                        <div class="group-item">
+                                            <div class="group-name">團名團名</div>
+                                            <div class="group-need">缺5人</div>
+                                            <button>+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mission-card">
+                    <div class="card-header">
+                        <div href='#collapse3' data-toggle="collapse" data-parent="#explore-mission">
+                            <div class="card-img"></div>
+                            <div class="mission-title">任務名稱</div>
+                            <div class="mission-joined">已有15人參加</div>
+                        </div>
+                    </div>
+                    <div id="collapse3" class="collapse">
+                            <div class="card-body">
+                                    <ul class="nav nav-tabs nav-justified mission-info-tab">
+                                        <li id="left-tab" class="active">
+                                            <a data-toggle="tab" href="#mission-intro3">任務介紹</a>
+                                        </li>
+                                        <li id="right-tab">
+                                            <a data-toggle="tab" href="#mission-signup3">揪團報名</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content card-tab-content">
+                                        <div id="mission-intro3" class="tab-pane fade in active">
+                                            <div class="mission-intro-content">
+                                                我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣
+                                                我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣
+                                                我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣
+                                                我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣
+                                                我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣我是文宣
+                                            </div>
+                                        </div>
+                                        <div id="mission-signup3" class="tab-pane fade">
+                                            <button class="btn-create-group">我要開團</button>
+                                            <div class="group-item-box">
+                                                <div class="group-item">
+                                                    <div class="group-name">團名團名</div>
+                                                    <div class="group-need">缺5人</div>
+                                                    <button>+</button>
+                                                </div>
+                                                <div class="group-item">
+                                                    <div class="group-name">團名團名</div>
+                                                    <div class="group-need">缺5人</div>
+                                                    <button>+</button>
+                                                </div>
+                                                <div class="group-item">
+                                                    <div class="group-name">團名團名</div>
+                                                    <div class="group-need">缺5人</div>
+                                                    <button>+</button>
+                                                </div>
+                                                <div class="group-item">
+                                                    <div class="group-name">團名團名</div>
+                                                    <div class="group-need">缺5人</div>
+                                                    <button>+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+            </div>
+            <div id="my-mission" class="tab-pane fade">
+                <h3>Menu 1</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        
+        <div class="quarter_circle" style="left: 0vw; background-image: url('src/home.png');"></div>
+        <div class="quarter_circle" style="right: 0vw; background-image: url('src/chat.png');"></div>
+        <!-- <script src="mission.js"></script> -->
+    </body>
+</html>
